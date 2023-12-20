@@ -78,6 +78,9 @@ Solution : One time use token
   console.log(x.value)      =>  undefined
   ```
 - String is not a collection. Array, Map (very much like dictionary), set are collections.
+- "in" iterates over "indicies".
+- "of" iterate over "values"
+- if array have holes then JS counts only those indicies which have values.
 
 ### ⁂ Applets :
 - written in Java, embeded in HTML
@@ -142,10 +145,11 @@ if 4 function at once then stack will have 4 functions. now if we provided 1 mor
 Taking task out of queue and put it onto stack and start executing till call stack become empty. this process is called **Event Loop**.<br>
 once a task make to call stack it must be completed before next task is evoked.
 
-```
 ⁂
+```
 let a = [1,2,3,4,5]
 console.log(object.values(a)) = [1,2,3,4,5]
 console.log(object.keys(a)) = ['0','1','2','3','4']
 console.log(object.entries(a)) = [['0',1]['1',2],...,['4',5]]
 ```
+
