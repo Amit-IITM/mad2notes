@@ -29,7 +29,24 @@ Structure of document on browser, You can directly change what you are seeing.
 ### ⁂ Some facts
 - Default port number of Flask application is **5000**.
 - JS engine generally use **UTF-16** encoding.
-- ```===``` use in avoiding coercion in JS.
+- ```===``` use in avoiding coercion in JS. because JS is a tolrent language.
+- **Templates** Starts with `backward quotes.   ${ variable name }
+- ```
+  for (let x = 0; x < 5; x++) {
+      console.log(x);
+      }
+  ```
+  we can't use const here or for loop will not run.
+- **Await** function for time lag.
+- **inner HTML** : modifying HTML through JavaScript.
+- **Literals** : they represents values in JS. These are fixed values.
+   - True is not a valit litral in JS.
+- ```
+  let x = 200
+  console.log(x)    => 200
+  console.log(x.value)      =>  undefined
+  ```
+
 
 ### ⁂ Applets :
 - written in Java, embeded in HTML
@@ -65,3 +82,17 @@ Structure of document on browser, You can directly change what you are seeing.
 ### ⁂ Let, Var, Const :
 |x|Scope|Redeclare|Reassign|Hoisted|Bind this|
 |---|---|---|---|---|---|
+|var| Global | Yes | Yes | Yes | Yes|
+|let| Block | No | Yes | No | No |
+|const| Block | No | No | No | No |
+
+### Const :
+### Var :
+### Let :
+
+### ⁂ Function :
+1. Regular declaration :
+2. Named variable :
+3. Arrow function :
+
+
