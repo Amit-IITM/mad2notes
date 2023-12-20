@@ -18,6 +18,7 @@
 <hr>
 
 **Asynchronycity** : Multiple task at the same time without being in synchronizing to each other. No direct time relationship between them.
+<br>
 **Ajax** : Asynchronous JavaScript And XML
 <hr>
 
