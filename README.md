@@ -91,6 +91,14 @@ Relly good if we want to transfer an object from one place to another. Json is f
 - "of" iterate over "values"
   ```for i of ['a','b','c'] => a,b,c```
 - if array have holes then JS counts only those indicies which have values.
+- ```
+  True * True = 1
+  False * False = 0
+  True * False = 0
+  ```
+- when we define a function inside { }, then always use "return".
+- use **set time out**  with **set interval**.
+- **length** method is defined only for array, not for other objects.
 
 <hr>
 
@@ -138,7 +146,7 @@ Relly good if we want to transfer an object from one place to another. Json is f
 |const| Block | No | No | No | No |
 
 ### Const :
-can't change it's value throughout JS code.
+We need to assign value to const at the moment of defining. Can't change it's value throughout JS code.
 ### Var :
 Globally scoped, you can change it from anywhere.
 <br>
@@ -157,6 +165,9 @@ here if you change value inside block then that value will changed only for bloc
 A function which can be passed as argument.
 
 ### ⁂ special variable "this" : 
+This keyword refers to the current object in a method or constructor. when "this" is inside a function it owns the value of that function. When it's outside a function then it owns the global value.
+<br> If "this" is not set by a call then it'll have the value of global object.
+<br> **Arrow function** doesn't pick the value of "THIS" from it's own block. it picked value of THIS from immediate surrounding. 
 
 <hr>
 
@@ -240,6 +251,34 @@ but like ```(function(){something()})()```
 <hr>
 
 **Higher Order Functions** : A function that accepts functions as parameters and/or returns a function.
+
+<hr>
+
+### ⁂ Life cycle hooks / Component Life cycle hooks
+4 different phases through which component goes through in a Vue application.<br>
+1. Creation : Before create, created
+2. mounting : Before mount, mounted
+3. updating : before update, updated
+4. Unmounting : before unmounted, unmounted
+<br>
+5 more methods : activated, deactivated, error captured, render tracked, render triggered.
+<br><br>
+```
+parent before created => created => before mount
+child before created => created => beofre mounted => mounted
+parent mounted => before update
+child before unmounted => unmounted
+parent updated
+```
+
+<hr>
+
+### ⁂ Async / Await in Java Script :
+A simple function, it gives you whatever you enters.<br>
+Just add "async" before function and it'll give you promise. it'll not give you exact output but promise.
+
+### ⁂ Promise :
+
 
 <hr>
 
