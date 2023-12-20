@@ -191,7 +191,7 @@ console.log(object.entries(a)) = [['0',1]['1',2],...,['4',5]]
   - Responsive : No lag, immediate response
   - Adaptive : Different size screen adaptiveness
 
-    <hr>
+<hr>
 
 ### ⁂ Programming style :
 **Imperative** :
