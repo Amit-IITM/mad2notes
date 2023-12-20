@@ -177,6 +177,47 @@ console.log(object.entries(a)) = [['0',1]['1',2],...,['4',5]]
 
 <hr>
 
+### ⁂ UI and UX :
+**UI** : User Interface. related to the aesthetics of the application.
+**UX** : User experience. How user interact with the application.
+<br>
+**Requirements** :
+- all computations and logic must be in backend.
+- No data storeage in frontend, only representation of results, which are requested.
+- must suport stateless nature of HTTP.
+<br>
+**Desirable aspectrs** :
+  - Aesthetically pleasing : not ugly
+  - Responsive : No lag, immediate response
+  - Adaptive : Different size screen adaptiveness
+
+    <hr>
+
+### ⁂ Programming style :
+**Imperative** :
+If you want some result then, You need to formulize all steps. Steps Oriented
+<br>
+**Declarative** :
+Focus on final result, steps will follow. Result oriented
+
+<hr>
+
+### ⁂ State :
+Memory of the system
+<br>
+**System State** : Describes entire system.
+**Application state** : Syatem as seen on user/session. It includes interactivity and session management. everything which is present in the screen when app is running.
+**UI state** (Ephimereal state) : very short lasting. Part of application which actually interects with user.
+
+<hr>
+
+### ⁂ Persistant and Non-Persistant data :
+Persistent data lasts longer than application. It stays available even you fully closed the application and restart the application. ex. System state or Application state.
+<br>
+Non-Persistant data very voletile data, disappeared as soon as you close your application. ex. Epemeral state.
+
+<hr>
+
 **CSRF** : Cross Site request Forgery <br>
 let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
 Solution : One time use token
