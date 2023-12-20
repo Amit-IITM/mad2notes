@@ -41,6 +41,18 @@ It happenes with "function" and "var" but not with "const" and "let".
   - with function, hoisting gives "value".
   - with var, hoisting gives "Undefined".
 
+**AMD** : Asynchronous module Definition
+
+**npm** : Node Package Manager
+  Command line interface of js; mainly used for backend code and testing.
+
+**Asynchronycity** : Multiple task at the same time without being in synchronizing to each other. No direct time relationship between them.
+
+**JSON** : Java Script Object Notation <br>
+Relly good if we want to transfer an object from one place to another. Json is frozen, no further developement.
+  - JSON.stringify() : takes one object and converts it into string.
+  - JSON.parse() : String to object
+
 **CSRF** : Cross Site request Forgery <br>
 let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
 Solution : One time use token
@@ -118,4 +130,22 @@ Solution : One time use token
 ### ⁂ Call Back function :
 A function which can be passed as argument.
 
+### ⁂ special variable "this" : 
 
+### ⁂ Prototype and heritance :
+In JS we can define one object "a" and other object "b". and make b as prototype of a. So b will inherit properties of parent object a. this is called **Prototype based inheritance**.<br>
+**Single Inheritance Track**, we can have only direct parent-children relationship.
+
+### ⁂ Stack frame - Call Stack - event Loop :
+Stack of all function provided. First in - Last out. <br>
+if 4 function at once then stack will have 4 functions. now if we provided 1 more function then it'll go into queue. and queue works on first in - first out. This is called **Task Queue**.<br>
+Taking task out of queue and put it onto stack and start executing till call stack become empty. this process is called **Event Loop**.<br>
+once a task make to call stack it must be completed before next task is evoked.
+
+```
+⁂
+let a = [1,2,3,4,5]
+console.log(object.values(a)) = [1,2,3,4,5]
+console.log(object.keys(a)) = ['0','1','2','3','4']
+console.log(object.entries(a)) = [['0',1]['1',2],...,['4',5]]
+```
