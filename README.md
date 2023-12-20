@@ -87,7 +87,9 @@ Relly good if we want to transfer an object from one place to another. Json is f
   ```
 - String is not a collection. Array, Map (very much like dictionary), set are collections.
 - "in" iterates over "indicies".
+  ``` for i in ['a','b','c'] => 0,1,2```
 - "of" iterate over "values"
+  ```for i of ['a','b','c'] => a,b,c```
 - if array have holes then JS counts only those indicies which have values.
 
 <hr>
@@ -136,8 +138,13 @@ Relly good if we want to transfer an object from one place to another. Json is f
 |const| Block | No | No | No | No |
 
 ### Const :
+can't change it's value throughout JS code.
 ### Var :
+Globally scoped, you can change it from anywhere.
+<br>
+Even if you change the value of Var inside block, it'll affect it globally.
 ### Let :
+here if you change value inside block then that value will changed only for block. block ki baat block me, bahar ki bahar.
 
 <hr>
 
@@ -215,6 +222,24 @@ Memory of the system
 Persistent data lasts longer than application. It stays available even you fully closed the application and restart the application. ex. System state or Application state.
 <br>
 Non-Persistant data very voletile data, disappeared as soon as you close your application. ex. Epemeral state.
+
+<hr>
+
+### ⁂ Vue
+Core idea behind Vue is **Declarative Rendring**. main focus on what need to be shown.
+<br>
+**Reactivity** : Automatically update certain parts of display in response of change-in-data.
+
+<hr>
+
+**IIFE** : Immediately Invoked Function Expression<br>
+this function executed immediately as soon as we define it.<br>
+it's structure is not like ```function(){something()}```
+but like ```(function(){something()})()```
+
+<hr>
+
+**Higher Order Functions** : A function that accepts functions as parameters and/or returns a function.
 
 <hr>
 
