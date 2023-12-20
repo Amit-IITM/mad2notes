@@ -305,6 +305,57 @@ But Threaded server accept incoming request and start working on it. if another 
 
 <hr>
 
+### ⁂ Redis :
+Redis is a tool to design Database. It is a "No SQL" database. No table or document required. All data saved in Key - value pairs in JSON format. Redis runs on our working memory **RAM**. very fast but voletile. It's not persistant database but runs in cache memory. Redis makes things faster, 10x to 50x .<br>
+<br>
+**6379** is the permanent **port** number for Redis.<br>
+**quit** : exit<br>
+**set** : Set a key and it's value<br>
+**get** : get that already seted key's value<br>
+**del** : delete a specific key<br>
+**exists** : check if any key exists<br>
+**Key \*** : gives us all keys at once.<br>
+**Flushall** : removes all keys<br>
+**clear** : to clear screen<br>
+**ttl** : time to live<br>
+  - generally output is -1, which shows this key will live forever.
+  - after giving **expire key time**, ttl gives remaining time
+  - and -2 means, key is already gone.
+
+<hr>
+
+### ⁂ Webhook
+It's a code which triggers when desired thing happens
+
+<hr>
+
+**PII** : Personally Identifiable Information <br>
+### Sensitive Information : 
+  - **Direct** : this information is given by user, and user knows about it.
+  - **Indirect** : this is related information, kind of Meta Data. which is not given by user directly.
+<br>
+
+**GDPR** : General Data Protection Regulation <br>
+required in EU for any business, cause of "cookies notice".
+<br>
+**HIPAA** : Health Insurance Portability and Accountability Act <br>
+US specific, protect data of patients and policy holder.
+
+<hr>
+
+### ⁂ Front End Security :
+1. **Site interaction** : how user interact with sites. <br>
+  - Static site : No info of user
+  - Form based site : user fill the form and this is the only info which we can get
+  - Dynamic site with JS : Complex site and we get lots of collected data
+2. **Resources** :
+    - cookie based site tracking
+    - **CDN** traking (Content Delivery Network)
+3. **Browser Exploits** : Malware, spyware, login data leakes, cross tab etc
+
+**Cross Site Scripting** : (XSS) <br>
+add some exploit in a website and when someone clicked on that link, it'll transfer all data to you ( mostly sessin cookies). and you can use this data to log in. <br>
+
 **CSRF** : Cross Site request Forgery <br>
 let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
 Solution : One time use token
