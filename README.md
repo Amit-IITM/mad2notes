@@ -26,6 +26,10 @@
 **DOM** : Document Object Model<br>
 Structure of document on browser, You can directly change what you are seeing.
 
+**CSRF** : Cross Site request Forgery <br>
+let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
+Solution : One time use token
+
 ### ⁂ Some facts
 - Default port number of Flask application is **5000**.
 - JS engine generally use **UTF-16** encoding.
