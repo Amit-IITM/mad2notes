@@ -80,45 +80,6 @@ Structure of document on browser, You can directly change what you are seeing.
 4. Functions : Can be handled like objects
 
 ### ⁂ Let, Var, Const :
-<table>
-<thead>
-<tr>
-<th>x</th>
-<th>Scope</th>
-<th>Redeclare</th>
-<th>Reassign</th>
-<th>Hoisted</th>
-<th>Bind this</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>var</td>
-<td>Global</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>let</td>
-<td>Block</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>const</td>
-<td>Block</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
 
 |x|Scope|Redeclare|Reassign|Hoisted|Bind this|
 |---|---|---|---|---|---|
