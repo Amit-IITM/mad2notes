@@ -3,33 +3,43 @@
 - frontend
 - backend
 - architrecture
-
-### ⁂ Some Acronyms and defenitions
+<hr>
 
 **JAM stack** : JavaScript, API, Markup. <br>
               This term is coined by **Mathias Biilmann**.
+<hr>
 
 **PWA** : Progressive Web Appliction <br>
           An app which can work in web browser and give same experience as App. It have all features of an App.
+<hr>
 
 **SPA** : Single Page App<br>
           If you make some changes in a part of SPA then only that part change, other part remain unaffected.
+<hr>
 
+**Asynchronycity** : Multiple task at the same time without being in synchronizing to each other. No direct time relationship between them.
 **Ajax** : Asynchronous JavaScript And XML
+<hr>
 
 **ECMA** : European Computer Manufacturers Association
+<hr>
 
 **Polyfills** : Libraries which use new functionalities in old browsers.
+<hr>
 
 **Linter** : A tool which go to source code and gives us idea about improving our code.
+<hr>
 
 **DOM** : Document Object Model<br>
 Structure of document on browser, You can directly change what you are seeing.
+<hr>
 
 **Array** : Collection of objects of any data type. We can have array of single data type or we can have different data types. we can also have holes in array.
 
+<hr>
 
 **Destructuring** : spliting an array into multiple variables.
+<hr>
 
 **Hoisting** : It appears to move "Declaration" at the top of your code before execution.
 ```
@@ -40,24 +50,21 @@ I declared var x after x = 5. logically it seems backward but it's fine in JS wi
 It happenes with "function" and "var" but not with "const" and "let".
   - with function, hoisting gives "value".
   - with var, hoisting gives "Undefined".
+<hr>
 
 **AMD** : Asynchronous module Definition
+<hr>
 
 **npm** : Node Package Manager
   Command line interface of js; mainly used for backend code and testing.
-
-**Asynchronycity** : Multiple task at the same time without being in synchronizing to each other. No direct time relationship between them.
+<hr>
 
 **JSON** : Java Script Object Notation <br>
 Relly good if we want to transfer an object from one place to another. Json is frozen, no further developement.
   - JSON.stringify() : takes one object and converts it into string.
   - JSON.parse() : String to object
+<hr>
 
-**CSRF** : Cross Site request Forgery <br>
-let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
-Solution : One time use token
-
-### ⁂ Some facts
 - Default port number of Flask application is **5000**.
 - JS engine generally use **UTF-16** encoding.
 - ```===``` use in avoiding coercion in JS. because JS is a tolrent language.
@@ -82,6 +89,8 @@ Solution : One time use token
 - "of" iterate over "values"
 - if array have holes then JS counts only those indicies which have values.
 
+<hr>
+
 ### ⁂ Applets :
 - written in Java, embeded in HTML
 - way of adding applets in HTML
@@ -101,6 +110,8 @@ Solution : One time use token
     2. Use Polyfills
     3. Use Compilers , which can convert new JS into older version.
 
+<hr>
+
 ### ⁂ Data Types in JS :
 1. Primitive : Built into the language
      1. undefined
@@ -112,6 +123,8 @@ Solution : One time use token
      7. symbol
 3. Objects : Multiple things put together
 4. Functions : Can be handled like objects
+
+<hr>
 
 ### ⁂ Let, Var, Const :
 
@@ -125,6 +138,8 @@ Solution : One time use token
 ### Var :
 ### Let :
 
+<hr>
+
 ### ⁂ Function :
 1. Regular declaration :
 2. Named variable :
@@ -135,15 +150,21 @@ A function which can be passed as argument.
 
 ### ⁂ special variable "this" : 
 
+<hr>
+
 ### ⁂ Prototype and heritance :
 In JS we can define one object "a" and other object "b". and make b as prototype of a. So b will inherit properties of parent object a. this is called **Prototype based inheritance**.<br>
 **Single Inheritance Track**, we can have only direct parent-children relationship.
+
+<hr>
 
 ### ⁂ Stack frame - Call Stack - event Loop :
 Stack of all function provided. First in - Last out. <br>
 if 4 function at once then stack will have 4 functions. now if we provided 1 more function then it'll go into queue. and queue works on first in - first out. This is called **Task Queue**.<br>
 Taking task out of queue and put it onto stack and start executing till call stack become empty. this process is called **Event Loop**.<br>
 once a task make to call stack it must be completed before next task is evoked.
+
+<hr>
 
 ⁂
 ```
@@ -152,4 +173,12 @@ console.log(object.values(a)) = [1,2,3,4,5]
 console.log(object.keys(a)) = ['0','1','2','3','4']
 console.log(object.entries(a)) = [['0',1]['1',2],...,['4',5]]
 ```
+
+<hr>
+
+**CSRF** : Cross Site request Forgery <br>
+let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
+Solution : One time use token
+
+<hr>
 
