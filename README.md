@@ -26,6 +26,21 @@
 **DOM** : Document Object Model<br>
 Structure of document on browser, You can directly change what you are seeing.
 
+**Array** : Collection of objects of any data type. We can have array of single data type or we can have different data types. we can also have holes in array.
+
+
+**Destructuring** : spliting an array into multiple variables.
+
+**Hoisting** : It appears to move "Declaration" at the top of your code before execution.
+```
+ x = 5
+var x
+```
+I declared var x after x = 5. logically it seems backward but it's fine in JS with hoisting. <br>  <br>
+It happenes with "function" and "var" but not with "const" and "let".
+  - with function, hoisting gives "value".
+  - with var, hoisting gives "Undefined".
+
 **CSRF** : Cross Site request Forgery <br>
 let's say you login your bank account in one tab and in another tab you open another tab which belongs to hacker. So if Hacker send "withdrawl" request to bank server then bank server will not be able to find difference between sender tab. and Hacker will get your money.<br>
 Solution : One time use token
@@ -50,7 +65,7 @@ Solution : One time use token
   console.log(x)    => 200
   console.log(x.value)      =>  undefined
   ```
-
+- String is not a collection. Array, Map (very much like dictionary), set are collections.
 
 ### ⁂ Applets :
 - written in Java, embeded in HTML
@@ -99,5 +114,8 @@ Solution : One time use token
 1. Regular declaration :
 2. Named variable :
 3. Arrow function :
+
+### ⁂ Call Back function :
+A function which can be passed as argument.
 
 
