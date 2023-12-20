@@ -278,7 +278,30 @@ A simple function, it gives you whatever you enters.<br>
 Just add "async" before function and it'll give you promise. it'll not give you exact output but promise.
 
 ### ⁂ Promise :
+It is an object that will produce a single value some time in future. <br>
+Three stages :
+- pending
+- fullfilled
+- rejected
+<br>
+Async functions always returns a promise.
 
+<hr>
+
+**Local storage**:
+- it's client side storage
+- each time app refreshes, the data will still persist
+- only string type data is stored in local storage
+
+<hr>
+
+### ⁂ Threaded Server :
+generally servers don't take more requests when they work on a request. They are caled **Blocking server**.<br>
+But Threaded server accept incoming request and start working on it. if another request comes then go and listen to that request too.
+
+**Concurrent** : Doing one task and then jumping to another. very fast jumping. so it seems like that both tasks are handled at the same time. but no.
+<br>
+**Parallelism** : We have hardware to deal with this situation. we can use 2 or more CPU to handle different tasks.
 
 <hr>
 
