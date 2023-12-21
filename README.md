@@ -233,6 +233,11 @@ Memory of the system
 Persistent data lasts longer than application. It stays available even you fully closed the application and restart the application. ex. System state or Application state.
 <br>
 Non-Persistant data very voletile data, disappeared as soon as you close your application. ex. Epemeral state.
+<br> <br>
+**Local Storage** is a client side storage, data will persist even if app refreshes. or browser restarts.
+  - Local Storage doesn't have remove() method.
+<br>
+
 
 <hr>
 
